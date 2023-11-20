@@ -4,6 +4,7 @@ import { urls } from "./.nuxt/modules/config/nuxt-simple-sitemap.d"
 export default defineNuxtConfig({
  devtools: { enabled: true },
 
+ css: ["animate.css/animate.min.css"],
  modules: [
   "@nuxtjs/google-fonts",
   "@pinia-plugin-persistedstate/nuxt",
