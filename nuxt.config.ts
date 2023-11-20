@@ -1,3 +1,5 @@
+import { defaults } from "./.nuxt/modules/config/nuxt-og-image.d"
+import { urls } from "./.nuxt/modules/config/nuxt-simple-sitemap.d"
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
  devtools: { enabled: true },
@@ -41,6 +43,17 @@ export default defineNuxtConfig({
  image: {
   cloudinary: {
    baseURL: "https://res.cloudinary.com/dckmlqzgd/image/upload/",
+  },
+ },
+
+ site: {
+  url: "https://www.focalfoods.co.ke",
+  name: "Focal Foods",
+  description:
+   "Focal Foods is a Honey and Beekeeping products company based in Nairobi, Kenya.",
+  defaultLocale: "en",
+  identity: {
+   type: "organization",
   },
  },
  extends: ["nuxt-seo-kit"],
