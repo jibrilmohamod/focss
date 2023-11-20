@@ -64,7 +64,7 @@
    <TheProducts />
    <ui-comp
     header="Browse Our Products"
-    paragraph=""
+    paragraph="Indulge in the unparalleled taste of Kenya with Focal Foods' Honey – a luscious, golden nectar that transcends ordinary sweetness. Brimming with the richness of Kenyan superfoods, it goes beyond a mere treat; it's a health elixir meticulously crafted for your well-being. Immerse yourself in its creamy texture, and savor the burst of nutrients and antioxidants in every spoonful."
     small-text="Bee well with every drop"
    >
     <template #image>
