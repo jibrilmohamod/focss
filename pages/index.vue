@@ -1,18 +1,10 @@
 <template>
  <div class="">
-  <!-- <div class="flex-col flex gap-2">
-   <TheNav />
-   <TheHero />
-  </div> -->
   <TheHero2 />
-  <!-- <TheBanner /> -->
   <div>
    <ui-comp
     header="Your Daily Dose Of Honey"
-    paragraph=" Experience the taste of Kenya with Focal Foods' Honey – golden, creamy, and
-   packed with the goodness of Kenyan superfoods. Beyond sweet, it's a health
-   elixir rich in nutrients and antioxidants. Bee well with every drop – good
-   for you, good for the bees. Elevate your honey game with Focal Foods."
+    paragraph="Discover the Sweetness of Kenya!  Indulge in the pure, natural goodness of Focal Foods Honey. Elevate your taste buds with the finest honey sourced from local beekeepers in Nairobi. Unwrap the essence of Kenya in every jar. Click below to experience the rich and delightful world of Focal Foods Honey. Your journey to sweet satisfaction starts here!"
    >
     <template #image>
      <div
@@ -61,7 +53,7 @@
     <template #button>
      <div class="py-6">
       <button class="px-10 bg-amber-200 py-3 w-fit">
-       <nuxt-link to="/products" class="text-xl text-black font-Josefinsans">
+       <nuxt-link to="" class="text-xl text-black font-Josefinsans">
         About Us
        </nuxt-link>
       </button>
@@ -72,10 +64,7 @@
    <TheProducts />
    <ui-comp
     header="Browse Our Products"
-    paragraph=" Experience the taste of Kenya with Focal Foods' Honey – golden, creamy, and
-   packed with the goodness of Kenyan superfoods. Beyond sweet, it's a health
-   elixir rich in nutrients and antioxidants. Bee well with every drop – good
-   for you, good for the bees. Elevate your honey game with Focal Foods."
+    paragraph=""
     small-text="Bee well with every drop"
    >
     <template #image>
@@ -125,7 +114,7 @@
     <template #button>
      <div class="py-6">
       <button class="px-10 bg-amber-200 py-3 w-fit">
-       <nuxt-link to="/products" class="text-xl text-black font-Josefinsans">
+       <nuxt-link to="" class="text-xl text-black font-Josefinsans">
         About Us
        </nuxt-link>
       </button>

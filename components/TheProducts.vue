@@ -71,10 +71,7 @@
 
          <div class="">
           <button class="px-10 bg-amber-200 py-3 w-fit">
-           <nuxt-link
-            to="/products"
-            class="text-xl text-black font-Josefinsans"
-           >
+           <nuxt-link to="" class="text-xl text-black font-Josefinsans">
             Buy Now
            </nuxt-link>
           </button>
