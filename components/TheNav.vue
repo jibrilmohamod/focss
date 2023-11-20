@@ -77,7 +77,7 @@
       <NuxtLink to="/account" class="text-lg border-button font-Lexend">
        Account
       </NuxtLink>
-      <NuxtLink to="/contactus/" class="border-button text-lg font-Lexend">
+      <NuxtLink to="/contactus" class="border-button text-lg font-Lexend">
        Contact
       </NuxtLink>
      </div>
