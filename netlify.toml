@@ -1,0 +1,16 @@
+[build]
+    base='/'
+    publish='dist'
+    command='nuxt generate'
+    environment = { NODE_VERSION = "18.0.0" }
+
+# We can put redirects 
+[[redirects]]
+    from = "/old-url"
+    to = "/new-url"
+    status = 200
+
+# Also put headers
+[[headers]]
+    for = "/*"
+    
