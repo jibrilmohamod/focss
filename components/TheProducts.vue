@@ -43,7 +43,7 @@
      <div class="flex flex-wrap -mx-12">
       <div
        class="w-full px-4 md:w-1/2 xl:w-1/3"
-       v-for="(prod, index) in products.Products"
+       v-for="(prod, index) in prods"
        :key="index"
       >
        <div
@@ -75,10 +75,7 @@
 
          <div class="">
           <button class="px-10 bg-amber-200 py-3 w-fit">
-           <nuxt-link
-            to="/products"
-            class="text-xl text-black font-Josefinsans"
-           >
+           <nuxt-link to="" class="text-xl text-black font-Josefinsans">
             Buy Now
            </nuxt-link>
           </button>
@@ -101,28 +98,10 @@
 
  const { products } = storeToRefs(productStore)
 
- const prods = ref(
-  {
-   name: "Natural Forest Honey",
-   price: 300,
-   size: "500g",
-   src: "v1694008262/mads-eneqvist-zqiE16q_Ju0-unsplash_da5rtx.jpg",
-  },
-  //    1kg honey
-  {
-   name: "Natural Forest Honey",
-   price: 600,
-   size: "1kg",
-   src: "v1694008262/mads-eneqvist-zqiE16q_Ju0-unsplash_da5rtx.jpg",
-  },
-  //    5kg honey
-  {
-   name: "Natural Forest Honey",
-   price: 3000,
-   size: "5kg",
-   src: "v1694008262/mads-eneqvist-zqiE16q_Ju0-unsplash_da5rtx.jpg",
-  }
- )
+ let prods = ref([])
+ const { data } = await useFetch("/api/products")
+ prods = data.value.Products
+ console.log(prods)
 
  onMounted(() => {
   fetchProducts()
