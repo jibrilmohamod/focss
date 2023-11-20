@@ -71,7 +71,10 @@
 
          <div class="">
           <button class="px-10 bg-amber-200 py-3 w-fit">
-           <nuxt-link to="" class="text-xl text-black font-Josefinsans">
+           <nuxt-link
+            to="/products"
+            class="text-xl text-black font-Josefinsans"
+           >
             Buy Now
            </nuxt-link>
           </button>
@@ -93,6 +96,29 @@
  const { fetchProducts } = productStore
 
  const { products } = storeToRefs(productStore)
+
+ const prods = ref(
+  {
+   name: "Natural Forest Honey",
+   price: 300,
+   size: "500g",
+   src: "v1694008262/mads-eneqvist-zqiE16q_Ju0-unsplash_da5rtx.jpg",
+  },
+  //    1kg honey
+  {
+   name: "Natural Forest Honey",
+   price: 600,
+   size: "1kg",
+   src: "v1694008262/mads-eneqvist-zqiE16q_Ju0-unsplash_da5rtx.jpg",
+  },
+  //    5kg honey
+  {
+   name: "Natural Forest Honey",
+   price: 3000,
+   size: "5kg",
+   src: "v1694008262/mads-eneqvist-zqiE16q_Ju0-unsplash_da5rtx.jpg",
+  }
+ )
 
  onMounted(() => {
   fetchProducts()
