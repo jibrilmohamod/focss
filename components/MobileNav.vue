@@ -3,7 +3,7 @@
   <!-- logo here and close button -->
   <div class="flex justify-between px-5 pb-10 pt-5 border-b border-gray-800">
    <NuxtLink to="/">
-    <img src="" class="object-contain h-12" alt="Focal Foods" />
+    <img src="/kogo.svg" class="object-contain h-12" alt="Focal Foods" />
    </NuxtLink>
 
    <button
@@ -25,7 +25,7 @@
    </NuxtLink>
 
    <NuxtLink
-    to="/about/"
+    to="/about"
     class="text-2xl focus:text-orange-500"
     aria-label="Nav link"
    >
@@ -41,7 +41,7 @@
    </NuxtLink>
 
    <NuxtLink
-    to="/contactus/"
+    to="/contactus"
     class="text-2xl focus:text-orange-500"
     aria-label="Nav link"
    >
