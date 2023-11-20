@@ -34,10 +34,6 @@
   </div>
   <!-- product card carousel -->
   <div class="">
-   <!-- <div v-for="(prod, index) in products.Products" :key="index">
-    <div></div>
-   </div> -->
-   <!-- ====== Cards Section Start -->
    <section class="bg-gray-2 dark:bg-dark pt-6 lg:pt-6 font-Montserrat">
     <div class="container mx-auto">
      <div class="flex flex-wrap -mx-12">
@@ -100,29 +96,6 @@
  const { fetchProducts } = productStore
 
  const { products } = storeToRefs(productStore)
-
- const prods = ref(
-  {
-   name: "Natural Forest Honey",
-   price: 300,
-   size: "500g",
-   src: "v1694008262/mads-eneqvist-zqiE16q_Ju0-unsplash_da5rtx.jpg",
-  },
-  //    1kg honey
-  {
-   name: "Natural Forest Honey",
-   price: 600,
-   size: "1kg",
-   src: "v1694008262/mads-eneqvist-zqiE16q_Ju0-unsplash_da5rtx.jpg",
-  },
-  //    5kg honey
-  {
-   name: "Natural Forest Honey",
-   price: 3000,
-   size: "5kg",
-   src: "v1694008262/mads-eneqvist-zqiE16q_Ju0-unsplash_da5rtx.jpg",
-  }
- )
 
  onMounted(() => {
   fetchProducts()

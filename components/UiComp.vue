@@ -57,7 +57,7 @@
  defineProps({
   smallText: {
    type: String,
-   default: "Refresh your taste buds",
+   default: "",
   },
   header: {
    type: String,
