@@ -34,12 +34,16 @@
   </div>
   <!-- product card carousel -->
   <div class="">
+   <!-- <div v-for="(prod, index) in products.Products" :key="index">
+    <div></div>
+   </div> -->
+   <!-- ====== Cards Section Start -->
    <section class="bg-gray-2 dark:bg-dark pt-6 lg:pt-6 font-Montserrat">
     <div class="container mx-auto">
      <div class="flex flex-wrap -mx-12">
       <div
        class="w-full px-4 md:w-1/2 xl:w-1/3"
-       v-for="(prod, index) in data.Products"
+       v-for="(prod, index) in products.Products"
        :key="index"
       >
        <div
@@ -95,9 +99,8 @@
 
  const { fetchProducts } = productStore
 
- const { data } = await useFetch("/api/products")
+ const { products } = storeToRefs(productStore)
 
-<<<<<<< HEAD
  const prods = ref(
   {
    name: "Natural Forest Honey",
@@ -124,46 +127,6 @@
  onMounted(() => {
   fetchProducts()
  })
-=======
- console.log(data)
-
- const prods = ref(
-  {
-   name: "Natural Forest Honey 500g",
-   price: 300,
-   details: "Natural Forest Honey From the Kenyan Highlands",
-   size: "500g",
-   src: "v1700457756/PKS_2805-removebg-preview_xlwlpb.png",
-  },
-  //    1kg honey
-  {
-   name: "Natural Forest Honey 1kg",
-   price: 600,
-   details: "Natural Forest Honey From the Kenyan Highlands",
-   size: "1kg",
-   src: "v1700457756/PKS_2805-removebg-preview_xlwlpb.png",
-  },
-  //    5kg honey
-  {
-   name: "Natural Forest Honey 5kg",
-   price: 3000,
-   details: "Natural Forest Honey From the Kenyan Highlands",
-   size: "5kg",
-   src: "v1700457756/PKS_2805-removebg-preview_xlwlpb.png",
-  },
-
-  //300g honey
-  {
-   name: "Natural Forest Honey 300g",
-   price: 200,
-   details: "Natural Forest Honey From the Kenyan Highlands",
-   size: "300g",
-   src: "v1700457756/PKS_2805-removebg-preview_xlwlpb.png",
-  }
- )
-
- onMounted(() => {})
->>>>>>> 1e4df0684b5dafdfb0b689a1063cf97b3fc64acd
 </script>
 
 <style lang="scss" scoped></style>
