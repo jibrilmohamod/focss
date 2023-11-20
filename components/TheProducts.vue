@@ -67,11 +67,16 @@
           </a>
          </h3>
          <p
-          class="text-base leading-relaxed text-body-color dark:text-dark-6 mb-7"
+          class="text-base leading-relaxed text-body-color dark:text-dark-6 pb-5"
          >
           {{ prod.details }}
          </p>
-         <!-- product size -->
+
+         <!-- //product price -->
+
+         <p class="pb-4">
+          {{ prod.price }}
+         </p>
 
          <div class="">
           <button class="px-10 bg-amber-200 py-3 w-fit">
@@ -92,11 +97,9 @@
 </template>
 
 <script setup>
- const productStore = useProductsStore()
+ const cartStore = useCartStore()
 
- const { fetchProducts } = productStore
-
- const { products } = storeToRefs(productStore)
+ const { addToCart } = cartStore
 
  let prods = ref([])
  const { data } = await useFetch("/api/products")

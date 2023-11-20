@@ -4,7 +4,7 @@
    <div class="md:w-2/5">
     <div class="flex">
      <NuxtLink to="/">
-      <img src="" alt="logo" class="object-contain h-16 w-full" />
+      <img src="/Logo.svg" alt="logo" class="object-contain h-16 w-full" />
      </NuxtLink>
     </div>
 
