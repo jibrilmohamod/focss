@@ -100,7 +100,7 @@
         <div class="text-gray-400 py-6">
             <div class="py-5">
                 <p class="font-jost text-center">
-                    &copy; 2023 focalfoods Restaurant & Cafe. All Rights Reserved.
+                    &copy; 2023 Focal Foods Kenya. All Rights Reserved.
                 </p>
             </div>
 
