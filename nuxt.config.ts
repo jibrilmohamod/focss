@@ -12,6 +12,7 @@ export default defineNuxtConfig({
   "@nuxt/image",
   "nuxt-icon",
   "@nuxtjs/tailwindcss",
+  "@nuxtjs/kinde",
  ],
 
  hooks: {
