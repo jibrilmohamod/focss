@@ -23,7 +23,7 @@
                     <!-- text  -->
                     <a class="text-sm text-gray-400"
                        href="tel:0712995522">
-                        +254 712995522
+                        +254 712 99 55 22
                     </a>
                 </div>
                 <!-- email  -->
